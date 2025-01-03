@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ImageGrid } from './components/ImageGrid';
 import { ImageModal } from './components/ImageModal';
 import { SearchBar } from './components/SearchBar';

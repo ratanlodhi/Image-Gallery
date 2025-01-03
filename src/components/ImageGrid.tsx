@@ -1,4 +1,3 @@
-import React from 'react';
 import { UnsplashImage } from '../types';
 import { motion } from 'framer-motion';
 

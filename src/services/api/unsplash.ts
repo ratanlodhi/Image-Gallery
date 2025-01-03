@@ -17,6 +17,7 @@ export async function fetchUnsplashImages(searchQuery: string): Promise<Unsplash
     },
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const data = await handleApiResponse<any>(response);
   return searchQuery ? data.results || [] : data || [];
 }

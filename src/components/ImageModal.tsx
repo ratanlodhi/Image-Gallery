@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { UnsplashImage } from '../types';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
