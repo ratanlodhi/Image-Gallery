@@ -2,6 +2,8 @@
 import { UnsplashImage } from '../types';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { DownloadButton } from './DownloadButton';
+
 
 interface ImageModalProps {
   image: UnsplashImage | null;
@@ -40,6 +42,10 @@ export function ImageModal({ image, onClose }: ImageModalProps) {
           />
           <div className="p-6">
             <h3 className="text-xl font-semibold mb-2">{image.user.name}</h3>
+            <DownloadButton
+             downloadUrl={image.urls.regular} 
+             fileName={image.id}
+            />
             <p className="text-gray-600 mb-4">{image.description || image.alt_description}</p>
             <div className="text-sm text-gray-500">
               Posted on {new Date(image.created_at).toLocaleDateString()}
